@@ -1,0 +1,23 @@
+{
+	"name": "whatsapp_web_clone",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pauloWeslleY/whatsapp_web_clone.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/pauloWeslleY/whatsapp_web_clone/issues"
+	},
+	"homepage": "https://github.com/pauloWeslleY/whatsapp_web_clone#readme",
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^6.3.0"
+	}
+}
