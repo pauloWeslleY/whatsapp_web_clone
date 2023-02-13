@@ -1,0 +1,179 @@
+@use "colors";
+
+// [] Styles SideBar
+
+.sidebar {
+	width: 410px;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+
+	.toolbar__container {
+		width: 100%;
+		height: 60px;
+		background-color: colors.$gray-100;
+	}
+
+	.notifications__container {
+		width: 100%;
+		height: 90px;
+
+		padding-top: 23px;
+		padding-left: 80px;
+
+		background-color: colors.$blue-100;
+		color: colors.$blue-500;
+
+		position: relative;
+		box-sizing: border-box;
+
+		.fa-solid.fa-bell-slash {
+			width: 45px;
+			height: 45px;
+
+			text-align: center;
+			line-height: 45px;
+			border-radius: 50%;
+			font-size: 18px;
+
+			color: colors.$blue-100;
+			background-color: colors.$white;
+
+			position: absolute;
+			top: 20px;
+			left: 15px;
+		}
+
+		.receive__notification {
+			font-size: 15px;
+			margin-bottom: 3px;
+		}
+
+		.activate__notification {
+			font-size: 13px;
+		}
+	}
+
+	// [] Styles Search Container
+	.search__container {
+		height: 50px;
+		width: 100%;
+		padding-left: 7.5px;
+		padding-top: 7.5px;
+		background-color: colors.$white-100;
+		color: colors.$gray-300;
+		position: relative;
+		box-sizing: border-box;
+
+		#search__contact {
+			position: absolute;
+			top: 18px;
+			left: 30px;
+
+			font-size: 14px;
+		}
+
+		#search {
+			border: none;
+			border-radius: 17.5px;
+			// outline: none;
+
+			background-color: colors.$white-50;
+
+			height: 35px;
+			width: 385px;
+			padding-left: 60px;
+			box-sizing: border-box;
+
+			&::placeholder {
+				color: colors.$gray-300;
+			}
+		}
+	}
+
+	.contacts__container {
+		height: auto;
+		background-color: colors.$white-50;
+
+		.contact__box {
+			cursor: pointer;
+			background-color: colors.$white-50;
+			height: 72px;
+			border: 1px solid colors.$white-200;
+			position: relative;
+			box-sizing: border-box;
+
+			transition: all 0.3s ease-in-out 400ms;
+
+			&:last-child {
+				border-bottom: 1px solid colors.$white-200;
+			}
+
+			&:hover {
+				background-color: colors.$white-300;
+			}
+
+			.user__photo {
+				width: 50px;
+			}
+
+			.user__info {
+				margin-left: 80px;
+				margin-top: 10px;
+				display: inline-block;
+
+				.user__name {
+					font-size: 16px;
+					color: colors.$black;
+					// margin-bottom: 12px;
+				}
+
+				.user__message_preview {
+					font-size: 14px;
+					color: colors.$gray-500;
+
+					.fa-check-double {
+						color: colors.$blue-300;
+						margin-right: 5px;
+					}
+				}
+			}
+
+			.message__info {
+				position: absolute;
+				top: 12px;
+				right: 20px;
+				display: inline-block;
+
+				.message__time {
+					font-size: 12px;
+					margin-bottom: 5px;
+					color: colors.$gray-200;
+				}
+
+				.message__pending {
+					background-color: colors.$green-100;
+					color: colors.$white-50;
+
+					width: 19px;
+					height: 19px;
+					line-height: 19px;
+					font-size: 12px;
+					font-weight: bold;
+					border-radius: 50%;
+
+					text-align: center;
+					float: right;
+				}
+			}
+		}
+
+		.active__chat {
+			background-color: colors.$white-400;
+		}
+
+		.contact__box.active__chat:hover {
+			background-color: colors.$white-400;
+		}
+	}
+}

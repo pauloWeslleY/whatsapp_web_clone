@@ -1,0 +1,39 @@
+@use "colors";
+
+// [] Styles Send Messages
+
+.send__message_container {
+	background-color: colors.$white-150;
+	border-left: 1px solid colors.$gray-150;
+	height: 60px;
+	padding-inline: 20px;
+
+	position: relative;
+
+	i {
+		font-size: 24px;
+		color: colors.$gray-400;
+		cursor: pointer;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	.fa-microphone {
+		float: right;
+	}
+
+	#chat__message {
+		position: absolute;
+		top: 10px;
+		left: 60px;
+
+		background-color: colors.$white-50;
+		height: 40px;
+
+		border: none;
+		border-radius: 20px;
+		padding-left: 20px;
+		font-size: 16px;
+		width: 815px;
+	}
+}

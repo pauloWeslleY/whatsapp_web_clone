@@ -1,0 +1,46 @@
+@use "colors";
+
+// [] Styles Chat
+
+.chat__container {
+	position: absolute;
+	top: 0;
+	left: 410px;
+	width: calc(100% - 410px);
+	height: 100%;
+	background-color: colors.$gray-200;
+
+	.chat__navbar {
+		height: 60px;
+		background-color: colors.$gray-100;
+		border-left: 1px solid colors.$gray-150;
+		padding-left: 75px;
+
+		.contact__info_container {
+			display: inline-block;
+
+			.user__name {
+				font-size: 16px;
+				height: 60px;
+				line-height: 60px;
+			}
+		}
+
+		.chat__tools_container {
+			float: right;
+			// display: inline-block;
+			height: 60px;
+			line-height: 60px;
+
+			margin-right: 20px;
+
+			li {
+				display: inline-block;
+				margin-inline: 15px;
+				font-size: 18px;
+				color: colors.$gray-400;
+				cursor: pointer;
+			}
+		}
+	}
+}

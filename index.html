@@ -22,16 +22,12 @@
 
 		<link rel="stylesheet" href="styles/css/index.min.css" />
 	</head>
-	<i class="fa-solid fa-ellipsis-vertical"></i>
+
 	<body>
 		<div class="container">
 			<aside class="sidebar">
 				<div class="toolbar__container">
-					<img
-						src="assets/avatar1.png"
-						alt="Avatar"
-						class="toolbar__user_photo"
-					/>
+					<img src="assets/avatar1.png" alt="Avatar" class="user__photo" />
 					<div class="aux__icons_toolbar_hero">
 						<i class="fa-solid fa-spinner"></i>
 						<i class="fa-solid fa-comment"></i>
@@ -48,8 +44,103 @@
 						<i class="fa-solid fa-angle-right"></i>
 					</p>
 				</div>
+
+				<div class="search__container">
+					<i id="search__contact" class="fa-solid fa-magnifying-glass"></i>
+					<input
+						id="search"
+						type="text"
+						name="search"
+						placeholder="Procurar ou começar uma nova conversa"
+					/>
+				</div>
+				<div class="contacts__container">
+					<div class="contact__box active__chat">
+						<img
+							src="/assets/avatar2.png"
+							alt="Users Avatar"
+							class="user__photo"
+						/>
+						<div class="user__info">
+							<p class="user__name">Iris West</p>
+							<p class="user__message_preview">
+								<i class="fa-solid fa-check-double"></i>
+								Hey how it's going?
+							</p>
+						</div>
+						<div class="message__info">
+							<p class="message__time">22:40</p>
+						</div>
+					</div>
+					<div class="contact__box">
+						<img
+							src="/assets/avatar3.png"
+							alt="Users Avatar"
+							class="user__photo"
+						/>
+						<div class="user__info">
+							<p class="user__name">Cisco Ramon</p>
+							<p class="user__message_preview">What's going on?</p>
+						</div>
+						<div class="message__info">
+							<p class="message__time">12:10</p>
+							<p class="message__pending">3</p>
+						</div>
+					</div>
+					<div class="contact__box">
+						<img
+							src="/assets/avatar4.png"
+							alt="Users Avatar"
+							class="user__photo"
+						/>
+						<div class="user__info">
+							<p class="user__name">Allegra Garcia</p>
+							<p class="user__message_preview">Hey, you gimme that!</p>
+						</div>
+						<div class="message__info">
+							<p class="message__time">07:40</p>
+							<p class="message__pending">5</p>
+						</div>
+					</div>
+				</div>
 			</aside>
-			<main class="chat__container"></main>
+			<main class="chat__container">
+				<nav class="chat__navbar">
+					<div class="contact__info_container">
+						<img
+							src="/assets/avatar2.png"
+							alt="Imagens do Usuário"
+							class="user__photo"
+						/>
+						<p class="user__name">Iris West</p>
+					</div>
+
+					<ul class="chat__tools_container">
+						<li><i class="fa-solid fa-magnifying-glass"></i></li>
+						<li><i class="fa-solid fa-paperclip"></i></li>
+						<li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+					</ul>
+				</nav>
+
+				<div class="messages__container">
+					<div class="background__img"></div>
+					<div class="chat__messages">
+						<p class="guest__messages">Hello How are you?</p>
+						<p class="user__messages">Yeah, I'm good!</p>
+					</div>
+				</div>
+				<div class="send__message_container">
+					<i class="fa-regular fa-face-grin"></i>
+					<input
+						id="chat__message"
+						type="text"
+						name="message"
+						class="user__input"
+						placeholder="Digite uma mensagem"
+					/>
+					<i class="fa-solid fa-microphone"></i>
+				</div>
+			</main>
 		</div>
 	</body>
 </html>
