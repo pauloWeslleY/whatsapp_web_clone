@@ -1,0 +1,69 @@
+@use "colors";
+
+// [] Style Messages
+
+.messages__container {
+	background-color: colors.$beige-100;
+	height: calc(100% - 120px);
+	position: relative;
+
+	.background__img {
+		background-image: url("../../assets/background_whats.png");
+		background-repeat: repeat;
+		opacity: 0.06;
+		width: 100%;
+		height: 100%;
+	}
+
+	.chat__messages {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		width: 100%;
+		height: auto;
+		padding: 30px 80px;
+		box-sizing: border-box;
+
+		p {
+			display: block;
+			color: colors.$gray-600;
+			font-size: 14px;
+			padding: 7px;
+			border-radius: 7px;
+			position: relative;
+			width: 200px;
+		}
+
+		.guest__messages {
+			background-color: colors.$white-50;
+
+			&:before {
+				content: "";
+				width: 0;
+				height: 0;
+				border-bottom: 17px solid transparent;
+				border-right: 17px solid colors.$white-50;
+				position: absolute;
+				top: 0;
+				left: -10px;
+			}
+		}
+
+		.user__messages {
+			background-color: colors.$green-200;
+			float: right;
+
+			&:after {
+				content: "";
+				width: 0;
+				height: 0;
+				border-bottom: 17px solid transparent;
+				border-left: 17px solid colors.$green-200;
+				position: absolute;
+				top: 0;
+				right: -10px;
+			}
+		}
+	}
+}
