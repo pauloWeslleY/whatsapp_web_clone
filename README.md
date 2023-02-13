@@ -5,4 +5,4 @@
 ## tecnologia utilizadas no projeto
 
 * HTML5
-* CSS3
+* SCSS
